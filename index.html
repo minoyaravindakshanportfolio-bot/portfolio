@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — developer, designer, and maker." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Your Name</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <h1>Hi, I'm Your Name</h1>
+        <p class="lead">I build web apps, make clean design, and solve problems with code.</p>
+        <p>
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn ghost" href="resume.md" target="_blank">View resume</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>Short bio: what you do, technologies you use, and what you're excited about. Replace this with your own text.</p>
+        <ul class="skills">
+          <li>JavaScript / TypeScript</li>
+          <li>React / Next.js</li>
+          <li>Node.js / Express</li>
+          <li>CSS / Tailwind</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Project One</h3>
+            <p>Short description of project one. Tech stack: React, Node.</p>
+            <p class="project-links">
+              <a href="#" target="_blank">Live</a> · <a href="#" target="_blank">Code</a>
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Two</h3>
+            <p>Short description of project two. Tech stack: Next.js, Vercel.</p>
+            <p class="project-links">
+              <a href="#" target="_blank">Live</a> · <a href="#" target="_blank">Code</a>
+            </p>
+          </article>
+
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you'd like to work together, reach out via email.</p>
+        <p><a class="email" href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <form id="contact-form" class="contact-form" action="#" onsubmit="handleContact(event)">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name · <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
